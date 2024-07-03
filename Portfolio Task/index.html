@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HATEM</title>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="Css/style.css" />
+    <!--Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Header section-->
+    <header class="header">
+      <a href="#" class="logo">HATEM</a>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Home section-->
+    <main class="home" id="home">
+      <div class="home_content">
+        <h3>Hii</h3>
+        <h1>i'm <span>HATEM</span> a front-end Developer</h1>
+        <p>
+          Hi! i'm Hatem Hessan, a student at cairo University's Faculty of
+          Computers and Artificial intelligence with a passion for front-end
+          development. with 1 year of hands-on experience.
+        </p>
+        <div class="contact_btn">
+          <a href="#contact"><button>Let's Talk</button></a>
+        </div>
+      </div>
+
+      <div class="home_img">
+        <img src="assets/Me.jpg" alt="image" loading="lazy" class="image" />
+      </div>
+    </main>
+    <!--About section-->
+    <section class="about" id="about">
+      <div class="about_img">
+        <img src="assets/me 2.jpg" alt="image" class="img" />
+      </div>
+
+      <div class="about_content">
+        <h3 class="heading">About <span>Me</span></h3>
+        <h1>Front-end Developer</h1>
+        <p>
+          Hi! i'm Hatem Hessan, a student at cairo University's Faculty of
+          Computers and Artificial intelligence with a passion for front-end
+          development. with 1 year of hands-on experience.
+        </p>
+        <div class="links">
+            <a href="https://www.facebook.com/profile.php?id=100023978122990" target="_blank" style="background-color: #4267b2;" class="link">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://github.com/hatem32" target="_blank" style="background-color: rgb(43, 42, 42);" class="link">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.instagram.com/hatem_hessan/" target="_blank" style="background-color: #e1306c;" class="link">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hatem-hessan-a31886309/" target="_blank" style="background-color: #4070f4;" class="link">
+                <i class='bx bxl-linkedin' ></i>
+            </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Projects section-->
+    <section class="projects" id="projects">
+        <h2 class="heading_title">My Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/projects.jpg" alt="image" width="100px" height="100px" class="card_img">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nemo facere dolorem neque, velit at alias cupiditate dolor earum possimus!</p>
+                <div class="project_links">
+                    <a href="#" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" class="live_demo" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/projects.jpg" alt="image" width="100px" height="100px" class="card_img">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nemo facere dolorem neque, velit at alias cupiditate dolor earum possimus!</p>
+                <div class="project_links">
+                    <a href="#" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" class="live_demo" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/projects.jpg" alt="image" width="100px" height="100px" class="card_img">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nemo facere dolorem neque, velit at alias cupiditate dolor earum possimus!</p>
+                <div class="project_links">
+                    <a href="#" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" class="live_demo" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="contact" id="contact">
+        <h2 class="heading_title">Contact Me</h2>
+        <form action="">
+            <div class="input_box">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input_box">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input_box">
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="input_box">
+               <textarea placeholder="Your Message" required cols="30"></textarea>
+            </div>
+            <div class="send_btn">
+                <input type="submit" value="send">
+            </div>
+        </form>
+    </section>
+
+    <!--Footer section-->
+    <footer class="footer" id="footer">
+        <p>2024 © HATEM All Rights Reserved</p>
+    </footer>
+
+
+  </body>
+</html>

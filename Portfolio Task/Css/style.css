@@ -1,0 +1,348 @@
+:root{
+    --main_color: #0265f9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+   all: unset;
+}
+ul li{
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main_color);
+}
+
+/* .......... Header section ..........   */
+.header{
+    padding: 25px 12%;
+    background-color: #252525;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-size: 35px;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: .3s;
+    animation: movebtn 1s infinite 3s;
+    color: var(--main_color);
+    cursor: pointer;
+}
+
+@keyframes logo{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.04;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+.navbar ul li {
+    cursor: pointer;
+}
+.navbar ul li a:hover {
+    color: #0265f9;
+    border-bottom: 1px solid var(--main_color) ;
+}
+.navbar ul li a{
+    transition: .3s;
+}
+
+/* .......... Home section ..........   */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    gap: 7rem;
+    padding: 30px 12% 0;
+    align-items: center;
+}
+.home_content h3{
+    font-size: 42px;
+
+}
+.home_content h1{
+    font-size: 62px;
+    line-height: 1.2;
+
+}
+.home_content h1 span{
+    color: var(--main_color);
+}
+.home_content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.contact_btn button{
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: var(--main_color);
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: .3s;
+    animation: movebtn 1s infinite 3s;
+}
+.contact_btn button:hover{
+    opacity: 1;
+
+}
+ /* Animation for move content btn*/
+@keyframes movebtn{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.04;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.home_img{
+    filter: drop-shadow(0 0 15px #000);
+    max-width: 300px;
+}
+.image{
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+}
+
+/* .......... About section ..........   */
+.about{
+    padding: 12% 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+    background-color: #000;
+}
+.about_img{
+    filter: drop-shadow(0 0 15px var(--main_color));
+    max-width: 300px;
+}
+.img{
+    height: auto;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.about_content{
+    color: white;
+}
+.about_content .heading{
+    font-size: 42px;
+
+}
+.about_content .heading span{
+    color: var(--main_color);
+}
+.about_content h1{
+    font-size: 62px;
+    margin: 10px 0 40px;
+}
+.about_content .links {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.links .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 0 30px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.about .link:hover{
+    color: rgb(143, 148, 153);
+}
+
+/* .......... Projects section ..........   */
+.projects{
+    padding: 8% 12% 13%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    position: relative;
+}
+.projects .heading_title{
+    position: absolute;
+    top: 20px;
+    font-size: 60px;
+    color: #150e0e34;
+}
+.projects .cards{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 20px;
+}
+.projects .card{
+    background-color: #bebebe67;
+    border-radius: 20px;
+    max-width: 435px;
+    padding: 10px;
+    transition: .3s;
+}
+.cards .card:hover{
+    transform: translate(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19) ;
+}
+.cards .card_img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.cards .card h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #0c0c0c;
+    transition: .3s;
+
+
+}
+.cards .card:hover h3{
+    color: var(--main_color);
+}
+.cards .card p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+}
+.project_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project_links .bxl-github{
+    font-size: 25px;
+    cursor: pointer;
+}
+.project_links .live_demo{
+    color: var(--main_color);
+    cursor: pointer;
+}
+
+/* .......... Contact section ..........   */
+.contact{
+    text-align: center;
+    background-color: #000;
+    font-size: 20px;
+}
+.contact .heading_title{
+    font-size: 60px ;
+    color: #bebebe67;
+    margin-bottom: 100px;
+    position: relative;
+    top: 40px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    max-width: 50em;
+    margin:  auto;
+}
+.contact form .input_box input,
+.contact form .input_box textarea{
+    width: 80%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: #000;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+    
+}
+.contact .send_btn{
+    margin-bottom: 50px;
+}
+.contact .send_btn input{
+    width: 200px;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    background-color: var(--main_color);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: .3s;
+}
+.contact .send_btn input:hover{
+    opacity: 1;
+}
+
+/* .......... Footer section ..........   */
+
+Footer.footer{
+    padding: 0 10%;
+    background-color: #252525;
+    color: white;
+    width: 100%;
+}
+footer.footer p{
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
